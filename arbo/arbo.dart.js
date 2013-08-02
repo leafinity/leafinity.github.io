@@ -3792,7 +3792,8 @@ call$1:function(a){var z
 $.cO=$.uA
 z=this.b
 z.kO()
-z.gCl().KF("Black first")}},UZ:{"":"Tp;a,b",
+z.gCl().KF("Black first")
+$.Qy($.tP("#levelDisplay"),"Level:&nbsp&nbsp-&nbsp-&nbsp-&nbsp-&nbsp-&nbsp-&nbsp-")}},UZ:{"":"Tp;a,b",
 call$1:function(a){var z=this.a
 z.sEE(z.gMi())
 $.Qy(this.b,"Level:&nbsp &nbsp &nbsp &nbsp &nbspHard")
