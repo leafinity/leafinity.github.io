@@ -3355,8 +3355,9 @@ if($.cO===$.uA){y=a===$.U5
 x="\\(>w<)/\\(>w<)/<br/><br/>&nbsp &nbsp &nbsp"+(y?"Black":"White")+" wins<br/><br/>\\(>w<)/\\(>w<)/_"
 w="|(>w<)\\/(>w<)|<br/><br/>&nbsp &nbsp &nbsp"+(y?"Black":"White")+" wins<br/><br/>|(>w<)\\/(>w<)|"
 z.a=0
-this.fQ=$.SZ($.kI,new $.vi(z,this,x,w))}if($.cO===$.IN)if(a===$.U5)$.Qy(this.aG,"You are so barbaric <img src = \"static/cry.gif\" alt = \"cry\"></img>  Play again! Play again!")
-else if(a===$.t9)this.KF("HA!HA!HA! I WIN. Go to pratice more")},
+this.fQ=$.SZ($.kI,new $.vi(z,this,x,w))}if($.cO===$.IN){this.Ry()
+if(a===$.U5)$.Qy(this.aG,"You are so barbaric <img src = \"static/cry.gif\" alt = \"cry\"></img>  Play again! Play again!")
+else if(a===$.t9)this.KF("HA!HA!HA! I WIN. Go to pratice more")}},
 mo:function(a,b){if(a&&this.n6!=null){this.n6.Gv()
 this.n6=null}if(b&&this.fQ!=null){this.fQ.Gv()
 this.fQ=null}},
