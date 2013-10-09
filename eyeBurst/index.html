@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eye Burst</title>
+    <link rel="stylesheet" href="cubecrush.css">
+    <link rel="stylesheet" href="block.css">    
+    <link rel="stylesheet" href="outBorder.css">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sniglet">
+  </head>
+  <body>
+    <header><img src="static/logo.png"></header>
+    <div class="copyright">
+    Copyright &copy; 2013 Leafinity<br/>https://www.facebook.com/leafinity<br/>illustrator: https://www.facebook.com/YANGMEI.YANG
+    </div></div>
+    <div class="outBorder" id="outBorder">
+        <div id="frame"></div>
+
+        <div class="shield" id="bigShield"></div>
+        <div class="number disappear" id="num1"><img src="static/1.png"></div>
+        <div class="number disappear" id="num2"><img src="static/2.png"></div>
+        <div class="number disappear" id="num3"><img src="static/3.png"></div>
+        <div class="number disappear st" id="numS"><img src="static/4.png"></div>
+        <div class="start" id="start"><img src="static/pumpking.png"></div>
+
+        <div class="button" id="hint"><img src="static/hint.png"></div>
+        <div class="button" id="restart"><img src="static/restart.png"></div>
+        <div class="button" id="mute"><img src="static/mute.png"></div>
+
+        <div class="score" id="score"></div>
+        <div class="timeline"></div>
+    </div>
+
+    <div class="output disappear" id="output">
+        <img src="static/restart2.png" id="re2">
+        <img src="static/score.png" id="lastscore">
+        <div id="scoreNum"></div>
+        <img src="static/monster1.png" id="monster0" class="disappear">
+        <img src="static/monster2.png" id="monster1" class="disappear">
+        <img src="static/monster3.png" id="monster2" class="disappear">
+        <img src="static/monster4.png" id="monster3" class="disappear">
+        <img src="static/monster5.png" id="monster4" class="disappear">
+        <div class="rank" id="rank"><img src="static/rank.png"></div>
+    </div>
+
+    <div class="output batShield disappear" id="batShield"><img src="static/blackShield.png"></div>
+
+    <img src="static/scoreBat.png" class="scoreShow disappear" id="scoreShow">
+    <div id="score2" class="score2 disappear"></div>
+    
+    <div class="output" id="submitboard">
+        <img src="static/input.png" id="monsterShadow">
+        <input type="text" id="input" maxlength="9" autocomplete="on" autofocus>
+        <input type="image" src="static/submit.png" alt="Submit" id="sbmt">
+        <img src="static/submit_red.png" id="bloodSubmit" class="disappear">
+    </div>
+
+
+    <script type="application/dart" src="main.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+
+                    <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42814280-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+  </body>
+</html>
