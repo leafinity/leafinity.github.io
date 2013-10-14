@@ -9747,33 +9747,28 @@ StageManager: {"": "Object;sthClicked,firstClicked,secondClicked,stage,score,ran
   setEvent2$0: function() {
     var t1, t2, t3;
     $.pos = document.querySelector("#outBorder");
-    t1 = $.get$animator();
-    t2 = new G.Score(0, document.querySelector("#score"));
-    t1.add$1;
-    H.Primitives_printString(">>add " + H.S(t2));
-    t1.actors.push(t2);
-    t2 = $.parent;
-    t2.get$onClick;
-    t1 = C.EventStreamProvider_click._eventType;
-    t2 = new W._ElementEventStreamImpl(t2, t1, false);
-    H.setRuntimeTypeInfo(t2, [null]);
-    t3 = new W._EventStreamSubscription(0, t2._target, t2._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure(this)), t2._useCapture);
-    H.setRuntimeTypeInfo(t3, [H.getRuntimeTypeArgument(t2, "_EventStream", 0)]);
+    t1 = $.parent;
+    t1.get$onClick;
+    t2 = C.EventStreamProvider_click._eventType;
+    t1 = new W._ElementEventStreamImpl(t1, t2, false);
+    H.setRuntimeTypeInfo(t1, [null]);
+    t3 = new W._EventStreamSubscription(0, t1._target, t1._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure(this)), t1._useCapture);
+    H.setRuntimeTypeInfo(t3, [H.getRuntimeTypeArgument(t1, "_EventStream", 0)]);
     t3._tryResume$0();
     t3 = document.querySelector("#hint");
     t3.get$onClick;
-    t3 = new W._ElementEventStreamImpl(t3, t1, false);
+    t3 = new W._ElementEventStreamImpl(t3, t2, false);
     H.setRuntimeTypeInfo(t3, [null]);
-    t2 = new W._EventStreamSubscription(0, t3._target, t3._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure0()), t3._useCapture);
-    H.setRuntimeTypeInfo(t2, [H.getRuntimeTypeArgument(t3, "_EventStream", 0)]);
-    t2._tryResume$0();
-    t2 = document.querySelector("#restart");
-    t2.get$onClick;
-    t1 = new W._ElementEventStreamImpl(t2, t1, false);
-    H.setRuntimeTypeInfo(t1, [null]);
-    t2 = new W._EventStreamSubscription(0, t1._target, t1._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure1()), t1._useCapture);
-    H.setRuntimeTypeInfo(t2, [H.getRuntimeTypeArgument(t1, "_EventStream", 0)]);
-    t2._tryResume$0();
+    t1 = new W._EventStreamSubscription(0, t3._target, t3._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure0()), t3._useCapture);
+    H.setRuntimeTypeInfo(t1, [H.getRuntimeTypeArgument(t3, "_EventStream", 0)]);
+    t1._tryResume$0();
+    t1 = document.querySelector("#restart");
+    t1.get$onClick;
+    t2 = new W._ElementEventStreamImpl(t1, t2, false);
+    H.setRuntimeTypeInfo(t2, [null]);
+    t1 = new W._EventStreamSubscription(0, t2._target, t2._eventType, W._EventStreamSubscription__wrapZone(new G.StageManager_setEvent2_closure1()), t2._useCapture);
+    H.setRuntimeTypeInfo(t1, [H.getRuntimeTypeArgument(t2, "_EventStream", 0)]);
+    t1._tryResume$0();
   },
   setTimer$0: function() {
     var _parent, i, img, t1, t2;
@@ -9869,18 +9864,23 @@ StageManager_setEvent_closure1: {"": "Closure;this_2",
 StageManager_setEvent__closure: {"": "Closure;this_3",
   call$1: function($event) {
     var t1, t2;
-    t1 = $.get$animator();
-    t2 = $.get$gameManager();
-    t1.add$1;
-    H.Primitives_printString(">>add " + H.S(t2));
-    t1.actors.push(t2);
-    t2 = $.get$animator();
-    t2.start$0(t2);
     t1 = this.this_3;
     if (t1.firstStart) {
       t1.firstStart = false;
       t1.setEvent2$0();
     }
+    t1 = $.get$animator();
+    t2 = new G.Score(0, document.querySelector("#score"));
+    t1.add$1;
+    H.Primitives_printString(">>add " + H.S(t2));
+    t1.actors.push(t2);
+    t2 = $.get$animator();
+    t1 = $.get$gameManager();
+    t2.add$1;
+    H.Primitives_printString(">>add " + H.S(t1));
+    t2.actors.push(t1);
+    t1 = $.get$animator();
+    t1.start$0(t1);
   }
 },
 
@@ -9950,18 +9950,23 @@ StageManager_setEvent_closure4: {"": "Closure;this_6",
 StageManager_setEvent__closure1: {"": "Closure;this_7",
   call$1: function($event) {
     var t1, t2;
+    t1 = this.this_7;
+    if (t1.firstStart) {
+      t1.firstStart = false;
+      t1.setEvent2$0();
+    }
     t1 = $.get$animator();
     t2 = $.get$gameManager();
     t1.add$1;
     H.Primitives_printString(">>add " + H.S(t2));
     t1.actors.push(t2);
     t2 = $.get$animator();
-    t2.start$0(t2);
-    t1 = this.this_7;
-    if (t1.firstStart) {
-      t1.firstStart = false;
-      t1.setEvent2$0();
-    }
+    t1 = new G.Score(0, document.querySelector("#score"));
+    t2.add$1;
+    H.Primitives_printString(">>add " + H.S(t1));
+    t2.actors.push(t1);
+    t1 = $.get$animator();
+    t1.start$0(t1);
   }
 },
 
