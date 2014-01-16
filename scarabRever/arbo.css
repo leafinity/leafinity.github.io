@@ -1,0 +1,395 @@
+body {
+  width: 100%;
+  background-color: #8a553b;
+  background-image: url('static/buttum.png');
+  background-repeat: repeat-x;
+  background-position: 0px 733px;
+}
+.chessboard, .logo, .chessboard div, header , .grade_b, .grade_w , .score_b , .score_w, .levelDisplay, .bc > img, .wc > img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  position: absolute;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92px;
+  padding: 20px 330px 20px;
+  background-color: rgb(45,70,70);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: left;
+  font-size: 40px;
+  font-family: "Fredericka the Great", sans-serif;
+  color: white;
+  z-index: 1;
+}
+
+.logo {
+  top: 15px;
+  left: 270px;
+  height: 70px;
+}
+
+.arbo {
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 735px;
+  padding: 0px;
+  margin: 0px;
+  background-image: url('static/background.png');
+  background-repeat: repeat;
+  position: absolute;
+}
+  
+.chessboard {
+  top: 127px;
+  left: 247px;
+  width: 566px;
+  height: 566px;
+  border:3px inset #b34d6f;
+  background-color: rgb(30,0,20);
+}
+
+.levelDisplay{
+  top: 150px;
+  left: 950px;
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 10px; 
+  background-color: white;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+
+.grade_b, .grade_w {
+  top: 220px;
+  left: 950px;
+  width: 123px;
+  height: 55px;
+  padding-top: 7px;
+  padding-bottom: 0;
+  padding-left: 12px;
+  padding-right: 0;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 3px;
+  background-color: rgb(250,223,66);  
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+
+}
+.grade_w {
+  top: 290px;
+  background-color: rgb(64,159,153);
+}
+
+.score_b , .score_w {
+  top: 220px;
+  left: 1078px;
+  width: 120px;
+  height: 55px;
+  padding-right: 15px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 35px;
+  background-color: white;
+  color: black;
+  font-size: 45px;
+  font-family: "Miltonian", "Calibri ", sans-serif;
+  text-align: right;
+
+}
+.score_w {
+  top: 290px;
+}
+
+.grade_b > div, .grade_w > div {
+    width: 40px;
+    height: 40px; 
+    border-radius: 20px;
+    background-color: rgb(64,159,153);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5)
+}
+.grade_w > div {
+    background-color: rgb(250,223,66);
+}
+
+#memo, .copyright, .win, .memo_top, .memo_bottom, .shield, .playerchoice, .playerchoice div, .sbCannotChess, .arboPatch, .level, .level div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  position: absolute;
+}
+
+.memo_top {
+  top: 400px;
+  left: 950px;
+  width: 250px;
+  height: 40px;
+  padding-left:15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+}
+
+.memo_bottom, #memo {
+  top: 438px;
+  left: 950px;
+  width: 250px;
+  height: 242px;
+  border-top: 2px dashed black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+}
+
+#memo {
+  height: 200px;  
+  padding-top: 5px;
+  padding-left:20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  color: black;
+}
+
+.win {
+  left: 10px;
+  top: 200px;
+  height: 30px;
+  width: 230px;
+  border-radius: 5px;
+  border: 2px outset #75052b; 
+  background-color: #8a2457;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  color: white;  
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  display: none;
+}
+
+.win:hover {
+  background-color: #b34d6f;
+  transition: background 0.3s ease;
+}
+
+.restart {
+  display: block;
+}
+
+
+.copyright {
+  top:735px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px 0 0;
+  box-shadow: 0 -4px 3px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.shield {
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10,0,0,0.3); 
+}
+
+.playerchoice, .level {
+  top: 227px;
+  left: 510px;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 4px 5px 24px rgba(50, 50, 50, 1);
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+
+}
+.level {
+  top: 177px;
+  height: 300px;
+}
+
+.playerchoice1, .playerchoice2, .level1, .level2, .level3{
+  top: 20px;
+  left: 30px;
+  width: 440px;
+  height: 70px;
+  padding-top: 7px;
+  padding-left: 80px;
+  border: 2px dashed rgb(50,90,100);
+  border-radius: 10px;
+}
+
+.playerchoice2 {
+  top: 110px;
+}
+.level1 {
+  top: 25px;
+}
+.level2 {
+  top: 115px;
+}
+.level3 {
+  top: 205px;
+}
+.level1, .level2, .level3 {
+  padding-top: 10px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.p1s, .p2s, .L1, .L2, .L3 {
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.p2s, .L2 {
+  top: 100px;
+}
+.L3{
+  top: 200px;
+}
+
+.p1s:hover, .p2s:hover, .L1:hover, .L2:hover, .L3:hover {
+  background-color: rgba(50,90,100,0.1);
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+.disappear {
+  display: none;
+}
+
+.sbCannotChess {
+  top: 40px;
+  left: 413px;
+  width: 230px;
+  height: 85px;
+  padding-top: 20px;
+  border: 1px solid #ac5877;
+  border-top: 0px solid #8a2457;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgba((70,40,50,0.7));
+  box-shadow: 0px 2px 7px rgba(99,140,11,0.75);
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif; 
+  text-align: center;
+  -wekit-transition: top 0.8s ease;
+  transition: top 0.8s ease;
+}
+
+.sbCannotChess_state2 {
+  top: 130px;
+  -webkit-transition: top 0.8s ease;
+  transition: top 0.8s ease;
+}
+.arboPatch {
+  top: 90px;
+  left: 400px;
+  width: 260px;
+  height: 40px;  border-bottom: 3px solid #550030; 
+  background-image: url('static/patch.png');
+}
+
+#hint{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  position: absolute;
+}
+
+#hint {
+  top: 640px;
+  left: 1230px;
+  width: 50px;
+  height: 50px;
+  padding-top: 11px;
+  padding-left: 7px;
+  border-radius: 25px;
+  background-color: #8a2457;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  color: white;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#hint:hover {
+  top: 637px;
+  left: 1227px;
+  width: 56px;
+  height: 56px;
+  padding-top: 13px;
+  padding-left: 8px;
+  border-radius: 28px;
+  font-size: 22px;
+  background-color: #b34d6f;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#hint:active {
+  top: 641px;
+  left: 1231px;
+  width: 38px;
+  height: 38px;
+  padding-top: 7px;
+  padding-left: 3px;
+  border-radius: 19px;
+  font-size: 17px;
+  background-color: #bfffdf;
+  box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.logo {
+  height
+}

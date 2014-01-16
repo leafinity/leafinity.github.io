@@ -2,13 +2,14 @@
 
 <html>
   <head>
-    <title>Arbo - a Reversi game</title>
+    <title>Scarab Paradise - a Reversi game</title>
     <link rel="stylesheet" href="arbo.css">
     <link rel="stylesheet" href="chess.css">
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Quicksand|Snowburst+One|Miltonian' rel='stylesheet' type='text/css'>
   </head>
  
   <body>   
-    <header>Arbo - a Reversi game</header>
+    <header><img src="static/logo.png" class="logo"></img> Scarab Paradise</header>
     <div class="arbo">
       <div class="chessboard" id="chessboard"></div>
       <div class="levelDisplay" id="levelDisplay">Level:</div>
@@ -23,9 +24,9 @@
     <div class="arboPatch"></div>
     <div class="shield" id="bigShield"></div>    
     <div class="level disappear">
-      <div class="level1"><font size="30px"  face="Wingdings">|</font> EASY</div>
-      <div class="level2"><font size="30px"  face="Wingdings">{</font> SILLY</div>      
-      <div class="level3"><font size="30px"  face="Wingdings">|</font> IDIOTIC</div>
+      <div class="level1"><font size="30px"  face="Wingdings">|</font> CHRYSALIS</div>
+      <div class="level2"><font size="30px"  face="Wingdings">{</font> LARVAE</div>      
+      <div class="level3"><font size="30px"  face="Wingdings">|</font> EGG</div>
       <div class="L1" id="hard"></div>
       <div class="L2" id="medium"></div>
       <div class="L3" id="easy"></div>
@@ -41,16 +42,5 @@
     <script type="application/dart" src="arbo.dart"></script>
     <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
     <script src="packages/browser/dart.js"></script>
-
-    <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-42814280-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-    </script>
   </body>
 </html>
