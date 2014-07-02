@@ -15,7 +15,7 @@
       function recieveMessage(e) {
         p = document.getElementById('message');
         p.innerHtml = e.data;
-        console.log(recieved);
+        console.log('recieved');
       }
 
       window.addEventListener('message', recieveMessage, false);
