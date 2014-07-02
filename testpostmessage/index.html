@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Postmessage R</title>
+  </head>
+  <body>
+    <h1>Test Postmessage R</h1>
+    
+    <p id="message"></p>
+
+    <script>
+      function recieveMessage(e) {
+        p = document.getElementById('message');
+        p.innerHtml = e.data;
+      }
+
+      window.addEventListener('message', handleSizingResponse, false);
+    </script>
+
+  </body>
+</html>
