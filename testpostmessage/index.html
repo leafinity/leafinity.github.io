@@ -9,13 +9,14 @@
   <body>
     <h1>Test Postmessage R</h1>
     
-    <p id="message"></p>
+    <div id="message"></div>
 
     <script>
       function recieveMessage(e) {
-        p = document.getElementById('message');
-        p.innerHtml = e.data;
+        a = document.getElementById('message');
+        a.innerHtml = "" + e.data;
         console.log('recieved');
+        e.source.postMessage('hello', e.origin);
       }
 
       window.addEventListener('message', recieveMessage, false);
