@@ -13,9 +13,7 @@
 
     <script>
       function recieveMessage(e) {
-        a = document.getElementById('message');
-        a.innerHtml = "recieved:" + e.data;
-        console.log('R recieved' + e.data);
+        console.log('R recieved: ' + e);
         //e.source.postMessage('hello', e.origin);
       }
 
