@@ -14,7 +14,7 @@
     <script>
       function recieveMessage(e) {
         console.log('R recieved:\n' + e.data.data + '\n' + e.data.id);
-        parent.postMessage('hello', e.origin);
+        window.parent.postMessage('hello', e.origin);
       }
 
       window.addEventListener('message', recieveMessage, false);
