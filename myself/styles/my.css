@@ -1,0 +1,158 @@
+.main, .left, .right, .displayBox, .mask, .goto, .title, .images{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  position: absolute;
+}
+body {
+  background-color:#F0F0F0
+}
+.main {
+  height:400px;
+  width:800px;
+}
+
+.left {
+  top:140px;
+  left:80px;
+  width: 0;
+  height: 0;
+
+  border-top   : 60px solid transparent;
+  border-right  : 60px solid #504040;
+  border-bottom : 60px solid transparent;
+}
+
+.right {
+  top:140px;
+  left:660px;
+  width: 0;
+  height: 0;
+
+  border-top: 60px solid transparent;
+  border-left: 60px solid #504040;
+  border-bottom : 60px solid transparent;
+}
+
+.left img, .right img{
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+}
+
+.displayBox {
+  top:0;
+  left:200px;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  border: 10px solid #504040;
+}
+
+.images {
+  top:0;
+  left:0;
+  height: 380px;
+  width: 380px;
+  border-radius: 190px;
+  overflow:hidden;
+  
+  background-color:black;
+}
+
+.title {
+  transition: top 0.5s linear, font-size 0.5s linear, color 0.5s;
+  
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  
+  top:180px;
+  left:5%;
+  height:20%;
+  width:90%;
+  
+  color: #fff;
+  font-family:'Krona One', 'serif';
+  font-size: 50px;
+  text-align:center;
+}
+
+.title_hover {
+  transition: top 0.5s linear, font-size 0.5s linear, color 0.5s;
+  
+  top:170px;
+  color: rgba(255,255,255,0.4);
+  font-family:'Krona One', 'serif';
+  font-size: 30px;
+  text-align:center;
+}
+
+.mask {
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mask_hover {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.goto {
+  top: 60%;
+  left:25%;
+  height:10%;
+  width:50%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #cc2724;
+  padding-top:5px;
+  
+  color:#fff;
+  font-family:'Doppio One', 'serif';
+  font-size: 30px;
+  text-align:center;
+}
+
+.flip_disappaer {
+  animation: fd 0.25s linear 0s 1;
+  -webkit-animation: fd 0.25s linear 0s 1;
+}
+
+.flip_animation {
+  animation-name: flip;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  
+  -webkit-animation-name: flip;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+}
+
+.disappear {
+  display: none;
+}
+
+@keyframes flip {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+@-webkit-keyframes flip {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
