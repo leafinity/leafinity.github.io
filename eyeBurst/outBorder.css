@@ -1,0 +1,149 @@
+.outBorder {
+  top: 230px;
+  width: 952px;
+  height: 544px;
+}
+
+#frame, .shield {
+  top: 0;
+  left: 0;
+  width: 892px;
+  height: 484px;
+  border-radius: 10px;  
+  background-color: #360505;
+  overflow: hidden;
+  
+}
+
+.shield {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button {
+  top: 10px;
+  left: 902px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12px;
+  color: white;
+}
+
+.button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+.button img:hover {
+  top: 1px;
+  left: 2px;
+  height: 48px;
+  animation: resize 0.2s ease-out;
+  -webkit-animation: resize 0.2s ease-out;
+}
+
+@keyframes resize
+{
+from    {top: 0; left: 0; height: 50px;}
+to      {top: 1px; left: 2px; height: 48px;}
+}
+
+@-webkit-keyframes resize
+{
+from    {top: 0; left: 0; height: 50px;}
+to      {top: 1px; left: 2px; height: 48px;}
+}
+
+#restart {
+  top: 70px;
+  font-size: 19px;
+}
+
+#mute {
+  top: 130px;
+}
+
+.score{
+  top: 517px;
+  left: 722px;
+  width: 170px;
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: black;
+  text-align: right;
+  font-size: 30px;
+  color: white;
+}
+
+.timeline {
+  top: 517px;
+  left: 0px;
+  width: 682px;
+  height: 10px;
+  background-color: black;
+}
+
+.start {
+  top: 140px;
+  left: 350px;
+  width: 200px;
+  font-size: 50px;
+}
+
+.start img {  
+  width: 200px;
+}
+
+.rotate {
+  animation: rotate 3.2s ease-out;
+  -webkit-animation: rotate 3.2s ease-out;
+}
+
+@keyframes rotate
+{
+from    {transform: rotateY(0deg);}
+to      {transform: rotateT(720deg);}
+}
+
+@-webkit-keyframes rotate
+{
+from    {-webkit-transform: rotateY(0deg);}
+to      {-webkit-transform: rotateY(720deg);}
+}
+
+.number {
+  left: 435px;
+  top: 330px;
+}
+
+.number img {
+  margin: 0;
+  height: 30px;
+}
+
+.st {
+  left: 393px;
+}
+
+.bat {
+  top: 506px;
+  height: 80px;
+  width: 80px;
+}
+
+.batfly {
+  top: 386px;
+  height: 260px;
+}
+
+.batfly img {
+  left: 0;
+  top: 0;
+  height: 260px;
+}

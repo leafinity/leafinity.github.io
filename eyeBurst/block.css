@@ -1,0 +1,104 @@
+.red {
+  background-image: url('redeye.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.yellow {
+  background-color: #f9ff45;
+}
+
+.blue {
+  background-color: #0596de;
+}
+
+.green {
+  background-color: #1cf540;
+}
+
+.purple {
+  background-color: #9e056b;
+}
+
+.block {
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+}
+
+.block img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.disappear {
+  display: none;
+}
+
+.hideOutput{
+  visibility: hidden;
+}
+
+.bomb {
+  background-image: url('bomb.png');
+}
+
+.thunder {
+  background-image: url('thunder.png');
+}
+
+.multiColor {
+  background-image: url('multicolor.png');
+}
+
+.clicked {
+  -webkit-box-shadow: 0px 0px 22px rgba(255, 255, 255, 0.72);
+  -moz-box-shadow:    0px 0px 22px rgba(255, 255, 255, 0.72);
+  box-shadow:         0px 0px 22px rgba(255, 255, 255, 0.72);
+  animation: onClick 1s ease;
+  -webkit-animation: onClick 1s ease;
+}
+
+@keyframes onClick
+{
+from {box-shadow:         0px 0px 0px rgba(255, 255, 255, 0.72);}
+to   {box-shadow:         0px 0px 22px rgba(255, 255, 255, 0.72);}
+}
+
+@-webkit-keyframes onClick
+{
+from {box-shadow:         0px 0px 0px rgba(255, 255, 255, 0.72);}
+to   {box-shadow:         0px 0px 22px rgba(255, 255, 255, 0.72);}
+}
+
+.frontest {
+  z-index: 300;
+}
+
+.rotateToDispear {
+  animation: rd 0.3s ease-out;
+  -webkit-animation: rd 0.3s ease-out;
+}
+
+@keyframes rd
+{
+from {left: 0; top: 0; width: 60px; height: 60px; transfrom: rotate(0deg);}
+to   {left: 30px; top: 30px; width: 0px; height: 0px; transfrom: rotate(720deg);}
+}
+
+@-webkit-keyframes rd
+{
+from {left: 0; top: 0; width: 60px; height: 60px; transfrom: rotate(0deg);}
+to   {left: 30px; top: 30px; width: 0px; height: 0px; transfrom: rotate(720deg);}
+}
+
+.hide {
+  overflow: hidden;
+}
